@@ -5,6 +5,9 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') }
+    ],
+    children: [
+      { path: '/all-support-article', component: () => import('pages/all-support-article.vue') }
     ]
   },
 
